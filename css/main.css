@@ -143,6 +143,12 @@ section {
     }
 }
 
+@media screen and (max-width: 500px) {
+    section {
+        width: 80%;
+    }
+}
+
 .filters div,
 input[type="reset"],
 input[type="text"],
