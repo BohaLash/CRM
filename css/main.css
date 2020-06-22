@@ -1,0 +1,415 @@
+
+/* Darck Theme*/
+
+/*:root {
+  --bg: #111;
+  --shadow: #000;
+  --blocks: #222;
+  --el: #fff;
+}*/
+
+
+
+/* Light Theme*/
+
+:root {
+  --bg: #fff;
+  --shadow: #333;
+  --blocks: #fff;
+  --el: #000;
+}
+
+
+
+:root {
+  --accent: #e48297;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif; 
+  background: var(--bg);
+  color: var(--el);
+
+  /* Pattern: */
+
+  /*background-image: url('../img/flamingo.svg');*/
+  /*background-attachment: fixed;*/
+
+}
+
+header {
+  position: fixed;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+  padding: 10px;
+}
+
+button, input {
+  border: none;
+}
+
+nav button {
+  width: 50px;
+  height: 50px;
+  margin: 25px;
+  border-radius: 50%;
+}
+
+/*.theme:hover {
+    --bg: #111;
+    --shadow: #000;
+    --blocks: #222;
+    --el: #fff;
+}*/
+
+button, section, input[type="text"] {
+  box-shadow: 0 0 30px var(--shadow);
+  background: var(--blocks);
+  transition: 1s;
+}
+
+button:hover, section:hover, input[type="text"]:hover, input[type="text"]:focus, button:focus {
+  box-shadow: 0 0 50px var(--accent);
+}
+
+button:focus {
+  border: solid var(--accent);
+}
+
+svg {
+  fill: var(--el);
+  width: 100%;
+  height: 100%;
+}
+
+.h {
+  display: none;
+}
+
+button:hover > .r, div:hover > .r {
+  display: none;
+}
+
+button:hover > .h, div:hover > .h {
+  display: block;
+}
+
+.info {
+  height: 100%;
+}
+
+.info p {
+  /*font-weight: lighter;*/
+  position: absolute;
+  bottom: 20%;
+  transform: translateY(-50%);
+  transform: rotate(-90deg);
+}
+
+section {
+  margin: 50px auto;
+  padding: 50px;
+  width: 60%;
+  height: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  border-radius: 4vw;
+}
+
+.filters div, input[type="reset"], input[type="text"], button, .show_all {
+    border-radius: 25px;
+}
+
+.search {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  background: none;
+  box-shadow: none;
+}
+
+.search:hover {
+  box-shadow: none;
+}
+
+input[type="text"] {
+  margin-right: 45px;
+  padding: 0 30px;
+  width: calc(100% - 250px);
+  height: 100%;
+  outline: none;
+  transition: 1s;
+}
+
+input[type="text"]:focus {
+  border: solid var(--accent);
+}
+
+.search button {
+  width: 200px;
+  height: 100%;
+  transition: 1s;
+}
+
+/* Filters Opened */
+/*  section .filters  */
+/* ноно добавіть када секция фильтров открита і убрать када закрита (по нажатию кнопки) */
+
+@media screen and (max-width: 720px) {
+  .search input  {
+    width: calc(100% - 100px);
+  }
+
+  .search button {
+    width: 50px;
+    padding-top: 14px;
+  }
+}
+
+form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+
+.filters div, .show_all {
+  line-height: 50px;
+}
+
+.filters div, input[type="reset"], .show_all {
+  margin: 25px;
+  width: 200px;
+  height: 50px;
+  border: dashed;
+  text-align: center;
+  background: none;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.date li {
+  text-align: center
+}
+
+input[type="reset"] {
+  width: 100px;
+  border-color: inherit;
+  color: inherit;
+}
+
+input[type="date"] {
+  display: none;
+  border-radius: 10px;
+  border: 1px dashed var(--accent);
+  background-color: var(--bg);
+}
+
+.date lable, br {
+  display: none;
+}
+
+.date p {
+  margin: 0;
+}
+
+.filters div:hover {
+  height: 180px;
+}
+
+.date:hover > input[type="date"], input[type="date"]:focus, input[type="date"]:focus ~ input[type="date"] {
+  display: inline-block;
+}
+
+input[type="date"]:focus ~ lable, input[type="date"]:focus ~ br, .date:hover > lable, .date:hover > br{
+  display: inline;
+}
+
+div:hover, input[type="reset"]:hover, .card ul:hover {
+  border-color: var(--accent);
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.filters ul {
+  overflow: hidden;
+  opacity: 0;
+  display: none;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.filters div:hover ul {
+  opacity: 100;
+  display: block;
+}
+
+li {
+  text-align: left;
+}
+
+lable {
+  font-weight: normal;
+}
+
+.show_all {
+  border: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 200px;
+  text-align: left;
+
+}
+
+thead {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+tr, th {
+  padding-right: 50px;
+}
+
+th {
+  padding-top: 10px;
+  top: 0;
+  position: sticky;
+  padding-bottom: 10px;
+  background: var(--blocks);
+  box-shadow: 0 0 10px 10px var(--blocks);
+}
+
+tbody tr {
+  border-bottom: 1px dashed #888;
+}
+
+tbody tr:last-child {
+  border: none;
+}
+
+td {
+  padding: 10px 0;
+  vertical-align: top;
+}
+
+tr:hover {
+  border-color: var(--accent);
+}
+
+@media screen and (min-width: 1150px) {
+
+  tr:hover > .r {
+    display: none;
+  }
+
+  tr:hover > .h {
+    display: block;
+  }
+
+}
+
+th:last-child {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 1150px) {
+  th:nth-last-child(2), th:last-child, td:nth-last-child(3), td:nth-last-child(2), td:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  th:nth-last-child(4), th:nth-last-child(3), td:nth-last-child(5), td:nth-last-child(4) {
+    display: none;
+  }
+}
+
+.card {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: auto;
+  box-shadow: 
+    0 0 30px var(--shadow),
+    0 0 100vh 10vh #000;
+}
+
+@media screen and (max-width: 1150px) {
+  .card {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .card {
+    width: 80%;
+  }
+}
+
+.card:hover {
+  box-shadow: 
+    0 0 50px var(--accent),
+    0 0 100vh 10vh #000;
+}
+
+.svg {
+  display: inline-block;
+  width: 30%;
+  height: 30%;
+}
+
+.userdata {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: left;
+}
+
+.userdata div {
+  margin: 10px;
+}
+
+.userdata ul {
+  padding: 20px;
+  list-style-type: sq;
+  border: dashed;
+  min-width: 150px;
+  border-radius: 15px;
+  font-weight: normal;
+  transition: 0.5s;
+}
+
+.userdata li {
+  padding: 10px;
+}
+
+
