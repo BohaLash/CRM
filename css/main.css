@@ -120,6 +120,12 @@ div:hover>.h {
     height: 100%;
 }
 
+@media screen and (max-width: 550px) {
+    .info {
+        display: none;
+    }
+}
+
 .info p {
     /*font-weight: lighter;*/
     position: absolute;
