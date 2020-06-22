@@ -58,6 +58,7 @@ button {
 button,
 input {
     border: none;
+    color: var(--el)
 }
 
 nav button {
