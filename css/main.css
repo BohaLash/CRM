@@ -134,6 +134,12 @@ section {
     border-radius: 4vw;
 }
 
+@media screen and (min-width: 1000px) {
+    section {
+        width: 65%;
+    }
+}
+
 .filters div,
 input[type="reset"],
 input[type="text"],
