@@ -134,9 +134,9 @@ section {
     border-radius: 4vw;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
     section {
-        width: 65%;
+        width: 90%;
     }
 }
 
