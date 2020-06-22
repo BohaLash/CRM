@@ -3,23 +3,23 @@
 
 /* Darck Theme*/
 
-:root {
+
+/* :root {
     --bg: #111;
     --shadow: #000;
     --blocks: #222;
     --el: #fff;
-}
+} */
 
 
 /* Light Theme*/
 
-
-/* :root {
-  --bg: #fff;
-  --shadow: #333;
-  --blocks: #fff;
-  --el: #000;
-} */
+:root {
+    --bg: #fff;
+    --shadow: #333;
+    --blocks: #fff;
+    --el: #000;
+}
 
 :root {
     --accent: #e48297;
@@ -131,11 +131,16 @@ div:hover>.h {
 section {
     margin: 50px auto;
     padding: 50px;
-    width: 60%;
     height: 100%;
     box-sizing: border-box;
     height: 100%;
     border-radius: 4vw;
+}
+
+@media screen and (min-width: 800px) {
+    section {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -146,7 +151,7 @@ section {
 
 @media screen and (max-width: 500px) {
     section {
-        width: 80%;
+        width: 90%;
     }
 }
 
