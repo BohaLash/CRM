@@ -11,8 +11,14 @@ function toggleTheme() {
 function toggleFilters() {
     if (document.getElementsByClassName('filters')[0].style.display == 'none') {
         document.getElementsByClassName('filters')[0].style.display = 'block';
+        document.getElementsByClassName('resp')[0].style.width = 'calc(100% - 100px)';
+        document.getElementsByClassName('resp')[1].style.width = '50px';
+        document.getElementsByClassName('resp')[1].style.paddingTop = '14px';
     } else {
         document.getElementsByClassName('filters')[0].style.display = 'none';
+        document.getElementsByClassName('resp')[0].style.width = '';
+        document.getElementsByClassName('resp')[1].style.width = '';
+        document.getElementsByClassName('resp')[1].style.paddingTop = '';
     }
 }
 
