@@ -11,7 +11,6 @@
         --blocks: #fff;
         --el: #000;
     }
-
     .th2 {
         --bg: #111;
         --shadow: #000;
@@ -27,7 +26,6 @@
         --blocks: #222;
         --el: #fff;
     }
-
     .th2 {
         --bg: #fff;
         --shadow: #333;
@@ -43,7 +41,6 @@ body {
     background: var(--bg);
     color: var(--el);
     /* Pattern: */
-
     /*background-image: url('../img/flamingo.svg');*/
     /*background-attachment: fixed;*/
 }
@@ -434,7 +431,7 @@ th:last-child {
     height: 30%;
 }
 
-.data {
+.fields {
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
@@ -443,11 +440,11 @@ th:last-child {
     text-align: left;
 }
 
-.data div {
+.fields div {
     margin: 10px;
 }
 
-.data ul {
+.fields ul {
     padding: 20px;
     list-style-type: sq;
     border: dashed;
@@ -457,6 +454,6 @@ th:last-child {
     transition: 0.5s;
 }
 
-.data li {
+.fields li {
     padding: 10px;
 }
