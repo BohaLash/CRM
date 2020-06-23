@@ -256,7 +256,7 @@ input[type="date"] {
     display: none;
     border-radius: 10px;
     border: 1px dashed var(--accent);
-    background-color: var(--bg);
+    background-color: var(--blocks);
 }
 
 .date lable,
