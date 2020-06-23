@@ -1,9 +1,18 @@
+// The Best CRM Ever
+
 function toggleTheme() {
-    current = document.body.className
-    if (current == "th1") {
-        document.body.className = "th2";
+    if (document.body.className == 'th1') {
+        document.body.className = 'th2';
     } else {
-        document.body.className = "th1";
+        document.body.className = 'th1';
+    }
+}
+
+function toggleFilters() {
+    if (document.getElementsByClassName('filters')[0].style.display == 'none') {
+        document.getElementsByClassName('filters')[0].style.display = 'block';
+    } else {
+        document.getElementsByClassName('filters')[0].style.display = 'none';
     }
 }
 
@@ -26,6 +35,7 @@ class CardMeneger {
         this.opened = false;
     }
 }
-
-$("#theme").click(toggleTheme)
+document.getElementById('theme').onclick = toggleTheme;
+document.getElementsByClassName('filters')[0].style.display = 'none';
+document.getElementById('filters').onclick = toggleFilters;
 var Cards = new CardMeneger($('.result>table'))

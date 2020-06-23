@@ -43,6 +43,7 @@ body {
     background: var(--bg);
     color: var(--el);
     /* Pattern: */
+
     /*background-image: url('../img/flamingo.svg');*/
     /*background-attachment: fixed;*/
 }
@@ -205,15 +206,6 @@ input[type="text"]:focus {
     transition: 1s;
 }
 
-
-/* Filters Opened */
-
-
-/*  section .filters  */
-
-
-/* ноно добавіть када секция фильтров открита і убрать када закрита (по нажатию кнопки) */
-
 @media screen and (max-width: 720px) {
     .search input {
         width: calc(100% - 100px);
@@ -222,6 +214,15 @@ input[type="text"]:focus {
         width: 50px;
         padding-top: 14px;
     }
+}
+
+input .opened {
+    width: calc(100% - 100px);
+}
+
+button .opened {
+    width: 50px;
+    padding-top: 14px;
 }
 
 form {
@@ -355,6 +356,7 @@ th {
     padding-bottom: 10px;
     background: var(--blocks);
     box-shadow: 0 0 10px 10px var(--blocks);
+    transition: 1s;
 }
 
 tbody tr {
