@@ -1,28 +1,39 @@
 /* The Best CRM Ever */
 
-
-/* Darck Theme*/
-
-
-/* :root {
-    --bg: #111;
-    --shadow: #000;
-    --blocks: #222;
-    --el: #fff;
-} */
-
-
-/* Light Theme*/
-
-:root {
-    --bg: #fff;
-    --shadow: #333;
-    --blocks: #fff;
-    --el: #000;
-}
-
 :root {
     --accent: #e48297;
+}
+
+@media (prefers-color-scheme: light) {
+    .th1 {
+        --bg: #fff;
+        --shadow: #333;
+        --blocks: #fff;
+        --el: #000;
+    }
+
+    .th2 {
+        --bg: #111;
+        --shadow: #000;
+        --blocks: #222;
+        --el: #fff;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .th1 {
+        --bg: #111;
+        --shadow: #000;
+        --blocks: #222;
+        --el: #fff;
+    }
+
+    .th2 {
+        --bg: #fff;
+        --shadow: #333;
+        --blocks: #fff;
+        --el: #000;
+    }
 }
 
 body {
@@ -30,7 +41,7 @@ body {
     padding: 0;
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     background: var(--bg);
-    /*color: var(--el);*/
+    color: var(--el);
     /* Pattern: */
     /*background-image: url('../img/flamingo.svg');*/
     /*background-attachment: fixed;*/
@@ -342,8 +353,8 @@ th {
     top: 0;
     position: sticky;
     padding-bottom: 10px;
-    /*background: var(--blocks);*/
-    /*box-shadow: 0 0 10px 10px var(--blocks);*/
+    background: var(--blocks);
+    box-shadow: 0 0 10px 10px var(--blocks);
 }
 
 tbody tr {
@@ -396,6 +407,7 @@ th:last-child {
 }
 
 .card {
+    display: none;
     text-align: center;
     position: absolute;
     top: 0;
@@ -428,7 +440,7 @@ th:last-child {
     height: 30%;
 }
 
-.userdata {
+.data {
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
@@ -437,11 +449,11 @@ th:last-child {
     text-align: left;
 }
 
-.userdata div {
+.data div {
     margin: 10px;
 }
 
-.userdata ul {
+.data ul {
     padding: 20px;
     list-style-type: sq;
     border: dashed;
@@ -451,6 +463,6 @@ th:last-child {
     transition: 0.5s;
 }
 
-.userdata li {
+.data li {
     padding: 10px;
 }
