@@ -84,6 +84,14 @@ nav button {
     border-radius: 50%;
 }
 
+nav button:first-child, nav button:last-child {
+    margin-top: 0;
+}
+
+nav button:last-child {
+    display: none;
+}
+
 button,
 section,
 input[type="text"] {
@@ -164,7 +172,7 @@ section {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     section {
         width: 90%;
     }
@@ -192,7 +200,7 @@ button,
 }
 
 input[type="text"] {
-    margin-right: 45px;
+    margin-right: 50px;
     padding: 0 30px;
     width: calc(100% - 250px);
     height: 100%;
@@ -209,6 +217,18 @@ input[type="text"]:focus {
     height: 100%;
     min-width: 50px;
     transition: 1s;
+}
+
+@media screen and (max-width: 720px) {
+    .search button {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .search button {
+        margin-right: 100px;
+    }
 }
 
 @media screen and (max-width: 720px) {
