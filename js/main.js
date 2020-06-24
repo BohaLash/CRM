@@ -22,6 +22,10 @@ function toggleFilters() {
     }
 }
 
+document.getElementById('theme').onclick = toggleTheme;
+document.getElementsByClassName('filters')[0].style.display = 'none';
+document.getElementById('filters').onclick = toggleFilters;
+
 class CardMeneger {
     constructor(table) {
         this.opened = false
@@ -41,7 +45,5 @@ class CardMeneger {
         this.opened = false;
     }
 }
-document.getElementById('theme').onclick = toggleTheme;
-document.getElementsByClassName('filters')[0].style.display = 'none';
-document.getElementById('filters').onclick = toggleFilters;
+
 var Cards = new CardMeneger($('.result>table'))
