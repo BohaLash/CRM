@@ -388,10 +388,23 @@ th:last-child {
     }
 }
 
-@media screen and (max-width: 700px) {
-    th:nth-last-child(4),
+@media screen and (max-width: 950px) and (min-width: 800px){
     th:nth-last-child(3),
-    td:nth-last-child(5),
+    td:nth-last-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    th:nth-last-child(4),
+    td:nth-last-child(5)
+     {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    th:nth-last-child(3),
     td:nth-last-child(4) {
         display: none;
     }
@@ -406,7 +419,7 @@ th:last-child {
     transform: translateX(-50%);
     width: 50%;
     height: auto;
-    box-shadow: 0 0 30px var(--shadow), 0 0 100vh 10vh #000;
+    box-shadow: 0 0 30px var(--shadow), 0 0 100vh 100vh rgba(0,0,0, .5);
 }
 
 @media screen and (max-width: 1150px) {
@@ -422,7 +435,7 @@ th:last-child {
 }
 
 .card:hover {
-    box-shadow: 0 0 50px var(--accent), 0 0 100vh 10vh #000;
+    box-shadow: 0 0 50px var(--accent), 0 0 100vh 100vh rgba(0,0,0, .6);
 }
 
 .svg {
