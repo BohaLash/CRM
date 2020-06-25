@@ -438,7 +438,7 @@ th:last-child {
 }
 
 .card {
-    /*display: none;*/
+    display: none;
     text-align: center;
     position: fixed;
     top: 0;
@@ -447,7 +447,7 @@ th:last-child {
     width: 40%;
     height: auto;
     z-index: 2;
-    box-shadow: 0 0 30px var(--shadow), 0 0 100vh 100vh rgba(0,0,0, .5);
+    box-shadow: 0 0 50px var(--shadow), 0 0 100vh 100vh rgba(0,0,0, .5);
 }
 
 @media screen and (max-width: 1350px) {
