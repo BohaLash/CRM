@@ -88,8 +88,7 @@ nav button:last-child {
 
 button,
 section,
-input[type="text"],
-.card {
+input[type="text"] {
     box-shadow: 0 0 30px var(--shadow);
     background: var(--blocks);
     transition: 1s;
@@ -144,8 +143,7 @@ div:hover>.h {
     transform: rotate(-90deg);
 }
 
-section,
-.card {
+section {
     margin: 50px auto;
     padding: 50px;
     height: 100%;
@@ -431,46 +429,32 @@ th:last-child {
     }
 }
 
-.profile {
-    display: none;
-    position: sticky;
-    bottom: 0;
-    margin: auto;
-    padding: 0 0 10px 0;
-    width: 40%;
-    background: none;
-}
-
-.profile:hover {
-    box-shadow: none;
-}
-
 .card {
+    display: none;
     text-align: center;
-    /*top: 0;*/
-    /*left: 50%;*/
-    /*transform: translateX(-50%);*/
-    width: 100%;
+    position: sticky;
+    bottom: 50px;
+    margin: 0 auto;
+    width: 40%;
     height: auto;
-    background: var(--blocks);
     z-index: 2;
     box-shadow: 0 0 50px var(--shadow), 0 0 100vh 100vh rgba(0,0,0, .5);
 }
 
 @media screen and (max-width: 1350px) {
-    .profile {
+    .card {
         width: 50%;
     }
 }
 
 @media screen and (max-width: 1150px) {
-    .profile {
+    .card {
         width: 65%;
     }
 }
 
 @media screen and (max-width: 880px) {
-    .profile {
+    .card {
         width: 80%;
     }
 }
